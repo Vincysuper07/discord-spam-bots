@@ -9,7 +9,7 @@ spam_text = sys.argv[2]
 
 @client.event
 async def on_ready():
-    print("Started Text Spam")
+    print("Spamming testù")
     while not client.is_closed:
         print(spam_text)
         await client.send_message(discord.Object(id=DiscordChannel), spam_text)
